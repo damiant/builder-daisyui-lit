@@ -14,7 +14,7 @@ export class SampleUi extends LitElement {
       <div class="sn-shell">
         <header class="sn-header">
           <a href="/" class="sn-brand" aria-label="ServiceNow inspired component gallery home">
-            <span>Serve Us</span><strong>wow</strong>
+            <span>serveus</span><strong>wow</strong>
           </a>
           <nav class="sn-nav" aria-label="Component categories">
             <a href="#actions">Actions</a>
