@@ -11,14 +11,30 @@ export class SampleUi extends LitElement {
 
   render() {
     return html`
-      <div class="p-6 max-w-5xl mx-auto space-y-12">
-        <div>
-          <a href="/" class="link">&larr; Back</a>
-          <h1 class="text-3xl font-bold mt-2">Sample UI</h1>
-          <p class="text-base-content/70">Every component from daisyui.com/components/</p>
+      <div class="sn-shell">
+        <header class="sn-header">
+          <a href="/" class="sn-brand" aria-label="ServiceNow inspired component gallery home">
+            <span>service</span><strong>now</strong>
+          </a>
+          <nav class="sn-nav" aria-label="Component categories">
+            <a href="#actions">Actions</a>
+            <a href="#data-display">Data display</a>
+            <a href="#navigation">Navigation</a>
+            <a href="#inputs">Inputs</a>
+          </nav>
+          <a href="#actions" class="btn btn-primary btn-sm">Explore UI</a>
+        </header>
+
+        <div class="sn-hero">
+          <a href="/" class="sn-back">&larr; Back to home</a>
+          <p class="sn-eyebrow">Component library</p>
+          <h1>Work flows better when <span>design feels effortless.</span></h1>
+          <p class="sn-lede">A complete DaisyUI component gallery reimagined with ServiceNow’s bold, clear, and human-centered visual language.</p>
         </div>
 
-        <section class="space-y-6">
+        <main class="sn-content">
+
+        <section id="actions" class="space-y-6">
           <h2 class="text-2xl font-semibold border-b pb-2">Actions</h2>
 
           <div>
@@ -80,7 +96,7 @@ export class SampleUi extends LitElement {
           </div>
         </section>
 
-        <section class="space-y-6">
+        <section id="data-display" class="space-y-6">
           <h2 class="text-2xl font-semibold border-b pb-2">Data display</h2>
 
           <div>
@@ -282,7 +298,7 @@ export class SampleUi extends LitElement {
           </div>
         </section>
 
-        <section class="space-y-6">
+        <section id="navigation" class="space-y-6">
           <h2 class="text-2xl font-semibold border-b pb-2">Navigation</h2>
 
           <div>
@@ -337,7 +353,7 @@ export class SampleUi extends LitElement {
             <h3 class="font-medium mb-2">Navbar</h3>
             <div class="navbar bg-base-200 rounded-box">
               <div class="flex-1">
-                <a class="btn btn-ghost text-xl">daisyUI</a>
+                <a class="btn btn-ghost text-xl">service<strong>now</strong></a>
               </div>
             </div>
           </div>
@@ -416,7 +432,7 @@ export class SampleUi extends LitElement {
           </div>
         </section>
 
-        <section class="space-y-6">
+        <section id="inputs" class="space-y-6">
           <h2 class="text-2xl font-semibold border-b pb-2">Data input</h2>
 
           <div>
@@ -605,7 +621,7 @@ export class SampleUi extends LitElement {
             <h3 class="font-medium mb-2">Browser</h3>
             <div class="mockup-browser border border-base-300 w-full">
               <div class="mockup-browser-toolbar">
-                <div class="input">https://daisyui.com</div>
+                <div class="input">https://servicenow.com</div>
               </div>
               <div class="grid place-content-center border-t border-base-300 h-40">Content</div>
             </div>
@@ -614,7 +630,7 @@ export class SampleUi extends LitElement {
           <div>
             <h3 class="font-medium mb-2">Code</h3>
             <pre class="mockup-code">
-<code>npm i daisyui</code></pre>
+<code>Design for better workflows.</code></pre>
           </div>
 
           <div>
@@ -632,6 +648,7 @@ export class SampleUi extends LitElement {
             </div>
           </div>
         </section>
+        </main>
       </div>
     `;
   }
