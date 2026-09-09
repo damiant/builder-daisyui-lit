@@ -14,7 +14,7 @@ export class MyElement extends LitElement {
           <a href="/sample-ui.html" class="btn btn-primary btn-sm">Explore UI</a>
         </header>
 
-        <main>
+        <main class="sn-page">
           <section class="event-feature" aria-labelledby="event-feature-title">
             <img
               class="event-feature__image"
