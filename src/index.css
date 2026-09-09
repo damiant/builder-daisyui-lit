@@ -52,6 +52,7 @@ body {
 
 .sn-shell {
   min-height: 100vh;
+  padding-inline: 5%;
   background: #f7f7f7;
 }
 
