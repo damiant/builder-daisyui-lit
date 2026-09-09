@@ -1,0 +1,25 @@
+- Reuse styling from globalStyles:
+```
+import globalStyles from "./index.css?inline";
+```
+
+- Design each component to have a single, well-defined responsibility.
+Keep render() pure by avoiding side effects and asynchronous work.
+- Expose only your public API with @property() and keep implementation details in @state().
+- Prefer property bindings (.value) over attributes for objects, arrays, and functions.
+- Pass data down through properties and communicate changes up with custom events.
+- Use Lit directives like repeat(), when(), cache(), and classMap() instead of manual template logic.
+- Use repeat() with stable keys when rendering dynamic lists.
+- Use the appropriate lifecycle hook (firstUpdated(), updated(), connectedCallback(), etc.) for each type of work.
+- Build accessibility in from the start with semantic HTML, keyboard support, and ARIA where needed.
+- Expose styling through CSS custom properties, ::part, and slots instead of relying on internal DOM structure.
+- Prefer immutable state updates over mutating objects or arrays in place.
+- Keep asynchronous operations out of render() and perform them in lifecycle methods, controllers, or dedicated tasks.
+- Extract shared behavior into Reactive Controllers instead of inheritance or mixins.
+- Write components in TypeScript to improve type safety and developer experience.
+- Publish standard ES modules with minimal bundling to maximize compatibility.
+- Minimize public API surface area to make components easier to understand and maintain.
+- Favor composition of small components over large, monolithic components.
+- Clean up event listeners, observers, and subscriptions in disconnectedCallback().
+- Use native HTML elements whenever they meet your accessibility and functionality needs.
+- Write components to be framework-agnostic by relying on web standards rather than framework-specific patterns.
